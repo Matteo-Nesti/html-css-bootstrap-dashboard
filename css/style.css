@@ -16,6 +16,20 @@
     border: dashed 1px green;
 }
 
+/************* utilities **************/
+
+.bg-light-blue {
+    background-color: #1b72e8;
+}
+
+.bg-blue {
+    background-color: #165bba;
+}
+
+/************* generics **************/
+
+
+
 /************* HEADER **************/ 
 
 header {
@@ -51,6 +65,11 @@ header #logoSmall {
     overflow: auto;
 }
 
+.myBadge {
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 0 .2rem;
+}
 
 /*********** Sidebar ************/
 
@@ -71,7 +90,7 @@ header #logoSmall {
 }
 
 .mySideBar.Big {
-    width: 150px;
+    width: 140px;
 }
 .mySideBar i {
     margin: .7rem .8rem;
