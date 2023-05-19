@@ -1,0 +1,41 @@
+/* debug */
+
+.cs-border-primary {
+    border: dashed 1px orange;
+}
+
+.cs-border-secondary {
+    border: dashed 1px red;
+}
+
+.cs-border-tertiary {
+    border: dashed 1px blue;
+}
+
+.cs-border-fourth {
+    border: dashed 1px green;
+}
+
+/************* HEADER **************/ 
+
+
+header #logoSmall {
+    width: 50px;
+}
+
+.myInput {
+    background-color: #e5e5e5;
+    border: transparent;
+}
+
+.myInput::placeholder {
+    font-size: .9rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
