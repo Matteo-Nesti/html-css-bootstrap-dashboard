@@ -18,6 +18,11 @@
 
 /************* HEADER **************/ 
 
+header {
+    height: 100px;
+    position: sticky;
+    
+}
 
 header #logoSmall {
     width: 50px;
@@ -31,11 +36,43 @@ header #logoSmall {
 .myInput::placeholder {
     font-size: .9rem;
     font-weight: 600;
-    padding-left: 1.5rem;
 }
 
 .fa-magnifying-glass {
     position: absolute;
     left: 20px;
     top: 10px;
+}
+
+/*********** Main ************/
+
+.myMainSection {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+
+/*********** Sidebar ************/
+
+.mySideBar {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #142a40;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 1.2rem 0;
+}
+
+.mySideBar.Small {
+    width: 80px;
+    align-items: center;
+}
+
+.mySideBar.Big {
+    width: 150px;
+}
+.mySideBar i {
+    margin: .7rem .8rem;
 }

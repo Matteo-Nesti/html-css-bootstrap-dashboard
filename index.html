@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header class="py-2 cs-border-primary">
+    <header class=" cs-border-primary d-flex align-items-center">
         <div class="container-fluid ">
             <nav class="navbar bg-light">    
                 <form class="w-100" role="search" >
@@ -22,7 +22,7 @@
                             <a href="#"><img src="img/logo.svg" alt="" class="d-none d-lg-inline-block"></a>
                         </div>
                         <div class="col position-relative">
-                            <input class="form-control me-2 myInput" type="search" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Search">
+                            <input class="form-control me-2 myInput ps-5" type="search" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="col-2">
@@ -37,7 +37,43 @@
         </div>
     </header>
 
+    <main class="d-flex">
+<!-- sidebar -->
+        <section >
+            <nav class="mySideBar Small cs-border-secondary d-lg-none">
+                <div class="d-flex flex-column">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-signal"></i>
+                </div>
 
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </nav>
+
+            <nav class="mySideBar Big cs-border-secondary d-none d-lg-flex">
+                <div class="d-flex flex-column">
+                    <span><i class="fa-solid fa-house"></i> Home</span>
+                    <span><i class="fa-solid fa-chart-simple"></i> Stats</span>
+                     <span><i class="fa-solid fa-signal"></i> Signal</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gear"></i> <span>Admin</span>
+                </div>
+            </nav>
+        </section>
+
+        <section class="myMainSection">
+            <div class="container-fluid h-100">
+                <div class="row h-100"> 
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 
