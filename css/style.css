@@ -82,6 +82,12 @@ header #logoSmall {
     margin-right: .3rem;
 }
 
+/******* FAQ *******/
+
+.title-faq {
+    font-weight: 600;
+}
+
 /*********** Sidebar ************/
 
 .mySideBar {
