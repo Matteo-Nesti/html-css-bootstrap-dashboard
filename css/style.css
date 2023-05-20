@@ -29,7 +29,6 @@
 /************* generics **************/
 
 
-
 /************* HEADER **************/ 
 
 header {
@@ -71,13 +70,6 @@ header #logoSmall {
     margin: 0 .2rem;
 }
 
-/************* cards section *****************/
-#myCardsSection i{
-    margin-right: .2rem;
-    padding: .5rem;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
 
 /************ table *************/
 
