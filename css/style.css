@@ -71,6 +71,25 @@ header #logoSmall {
     margin: 0 .2rem;
 }
 
+/************* cards section *****************/
+#myCardsSection i{
+    margin-right: .2rem;
+    padding: .5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+/************ table *************/
+
+#myCardsSection th, td {
+    text-align: center;
+}
+
+.avatar-table {
+    width: 35px;
+    margin-right: .3rem;
+}
+
 /*********** Sidebar ************/
 
 .mySideBar {
@@ -94,4 +113,21 @@ header #logoSmall {
 }
 .mySideBar i {
     margin: .7rem .8rem;
+}
+
+
+/************ RESPONSIVE **************/
+
+/** cells table **/
+
+@media screen and (min-width:768px)  {
+    #myCardsSection .bigCells {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px)  {
+    #myCardsSection .bigCells {
+        width: 50%;
+    }
 }

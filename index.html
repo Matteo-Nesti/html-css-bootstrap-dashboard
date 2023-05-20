@@ -37,7 +37,8 @@
         </div>
     </header>
 
-    <!-- sidebar -->
+        <!-- sidebar -->
+
     <main class="d-flex">
         <section>
             <nav class="mySideBar Small cs-border-secondary d-xl-none">
@@ -68,7 +69,8 @@
         <!-- sezione centrale -->
 
         <div class="myMainSection flex-grow-1">
-            <section class="bg-light-blue text-white p-4">
+
+            <section class="bg-light-blue text-white py-4 px-2" id="newStudent">
                 <div class="container-fluid">
 
                     <div class="row align-items-start">
@@ -105,8 +107,183 @@
                 </div>
             </section>
 
-            <section>
-                
+            <!-- cards section -->
+
+            <section class="py-4" id="myCardsSection">
+
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Prossime classi</h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+
+                                  <tr>
+                                    <th scope="col" class="text-start bigCells">Nome</th>
+                                    <th scope="col" class="d-none d-md-table-cell ">Data inizio</th>
+                                    <th scope="col" class="d-none d-md-table-cell ">ROI</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                  </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 75
+                                        </td>
+
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+
+                                        <td>
+                                            <span class="badge text-bg-success align-middle">Done</span>
+                                        </td>
+
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+ 
+                                    <tr>
+                                      <td scope="row" class="text-start bigCells">
+                                          <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 76
+                                      </td>
+  
+                                      <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                      <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+  
+                                      <td>
+                                          <span class="badge text-bg-success align-middle">Done</span>
+                                      </td>
+  
+                                      <td>
+                                          <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                          <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 77
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-warning align-middle text-white">Process</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 78
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-success align-middle">Done</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 79
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-danger align-middle">failed</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 80
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-success align-middle">Done</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 81
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-danger align-middle">failed</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row" class="text-start bigCells">
+                                            <img src="img/class-avatar.jpg" alt="avatar" class="img-fluid avatar-table align-middle"> Classe 82
+                                        </td>
+    
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
+                                        <td scope="col" class="d-none d-md-table-cell align-middle">20%</td>
+    
+                                        <td>
+                                            <span class="badge text-bg-success align-middle">Done</span>
+                                        </td>
+    
+                                        <td>
+                                            <i class="fa-solid fa-pencil text-muted align-middle"></i>
+                                            <i class="fa-solid fa-trash text-muted align-middle"></i>
+                                        </td>
+                                    </tr>
+   
+                                </tbody>
+  
+
+                              </table>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
 
