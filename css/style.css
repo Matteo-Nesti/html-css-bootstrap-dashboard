@@ -55,6 +55,14 @@ header #logoSmall {
     top: 10px;
 }
 
+header a {
+    text-decoration: none;
+}
+
+header a:hover > i{
+    opacity: .7;
+}
+
 /*********** Main ************/
 
 .myMainSection {
@@ -68,6 +76,11 @@ header #logoSmall {
     margin: 0 .2rem;
 }
 
+.myBadge:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
 
 /************ table *************/
 
@@ -76,7 +89,7 @@ header #logoSmall {
 }
 
 #myCardsSection section {
-    padding: .7rem 0;
+    padding: .8rem 0;
 }
 
 .avatar-table {
@@ -103,6 +116,16 @@ header #logoSmall {
     padding: 1.2rem 0;
 }
 
+.mySideBar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mySideBar a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
 .mySideBar.Small {
     width: 80px;
     align-items: center;
@@ -111,6 +134,7 @@ header #logoSmall {
 .mySideBar.Big {
     width: 140px;
 }
+
 .mySideBar i {
     margin: .7rem .8rem;
 }
