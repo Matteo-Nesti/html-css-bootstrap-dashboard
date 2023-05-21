@@ -77,6 +77,10 @@ header #logoSmall {
     text-align: center;
 }
 
+#myCardsSection section {
+    padding: 1rem 0;
+}
+
 .avatar-table {
     width: 35px;
     margin-right: .3rem;
@@ -84,7 +88,7 @@ header #logoSmall {
 
 /******* FAQ *******/
 
-.title-faq {
+.my-title-card {
     font-weight: 600;
 }
 
