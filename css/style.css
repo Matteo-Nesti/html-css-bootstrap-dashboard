@@ -31,7 +31,7 @@
 
 header {
     height: 100px;
-    position: sticky;
+    
     
 }
 
@@ -81,6 +81,12 @@ header a:hover > i{
     opacity: .8;
 }
 
+/************ off canvas *************/
+
+#newStudent .cs-offcanvas {
+    color: black;
+    width: 100%;
+}
 
 /************ table *************/
 
@@ -97,7 +103,7 @@ header a:hover > i{
     margin-right: .3rem;
 }
 
-/******* FAQ *******/
+/******* Cards *******/
 
 .my-title-card {
     font-weight: 600;
@@ -153,5 +159,13 @@ header a:hover > i{
 @media screen and (min-width:1200px)  {
     #myCardsSection .bigCells {
         width: 50%;
+    }
+}
+
+/*********** OffCanvas ************/
+@media screen and (min-width:768px) {
+
+    #newStudent .cs-offcanvas {
+        width: 600px;
     }
 }

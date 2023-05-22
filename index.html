@@ -65,10 +65,10 @@
         </div>
     </header>
 
-        <!-- sidebar -->
-
+    
     <main class="d-flex">
-        <section>
+        <!-- sidebar -->
+        <section id="mySidebarSection">
             <nav class="mySideBar Small d-xl-none">
                 <div class="d-flex flex-column">
                     <a href="#">
@@ -121,9 +121,124 @@
 
                         <div class="col-12 col-md-auto d-flex align-items-center my-3 order-md-1">
                             <h6 class="me-3">Nuovo Studente</h6>
-                            <button type="button" class="btn btn-outline-light">
+
+                            <!-- btn offcanvas -->
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
+                            
+                            <!-- off canvas -->
+                            <div class="offcanvas offcanvas-end cs-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                        Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body my-title-card">
+                                    <form method="get">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="fname" class="form-label">Nome</label>
+                                                    <input type="text" name="fname" class="form-control" id="fname">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="surname" class="form-label">Cognome</label>
+                                                    <input type="text" name="lname" class="form-control" id="lname" >
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="mail" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" name="email" aria-describedby="basic-addon1" id="mail">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="pword" class="form-label">Password</label>
+                                                    <input type="password" name="pswrd" class="form-control" id="pword">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="mail" class="form-label">Indirizzo Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" name="email" aria-describedby="basic-addon1" id="mail">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="pword" class="form-label">Password</label>
+                                                    <input type="password" name="pswrd" class="form-control" id="pword">
+                                                </div>
+                                            </div>   
+
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="address" class="form-label">Indirizzo</label>
+                                                    <input type="text" name="address" class="form-control" id="address" >
+                                                </div>
+                                            </div>
+                                                
+                                            <div class="col-12 col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="city" class="form-label">Citta`</label>
+                                                    <input type="text" name="city" class="form-control" id="city" >
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4">
+                                                <div class="mb-3">
+                                                    <label for="nation" class="form-label">Stato</label>
+                                                    <select class="form-select" name="nation" aria-label="Default select example" id="nation">
+                                                        <option value="IT">Italia</option>
+                                                        <option value="FR">Francia</option>
+                                                        <option value="SP">Spagna</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-2">   
+                                                <div class="mb-3">
+                                                    <label for="CAP" class="form-label">CAP</label>
+                                                    <input type="text" name="CAP" class="form-control" id="CAP" >
+                                                </div>
+                                            </div> 
+                                            
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="profilePic" class="form-label">Foto</label>
+                                                    <input class="form-control" name="pic" type="file" id="profilePic">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" re>
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                               
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="col-6 col-md-auto align-items-center my-3">
@@ -167,7 +282,7 @@
                                     <div class="card-body">
 
                                         <!-- table -->
-                                        <table class="table">
+                                        <table class="table table-hover">
                                             <thead>
 
                                             <tr>
