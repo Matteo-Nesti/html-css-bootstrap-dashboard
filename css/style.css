@@ -150,11 +150,7 @@ header a:hover > i{
 
 /** cells table **/
 
-@media screen and (min-width:768px)  {
-    #myCardsSection .bigCells {
-        width: 40%;
-    }
-}
+
 
 @media screen and (min-width:1200px)  {
     #myCardsSection .bigCells {
